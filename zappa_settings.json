@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "aws_region": "ap-northeast-2",
+        "django_settings": "config.dev",
+        "profile_name": "default",
+        "project_name": "django-boilerpl",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-ehsplu66d"
+    }
+}
