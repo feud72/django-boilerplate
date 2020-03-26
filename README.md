@@ -20,7 +20,7 @@ pipenv install --dev
 ### .env
 
 ```bash
-mkdir .env
+touch .env
 ```
 
 ```
@@ -70,6 +70,13 @@ GRANT
 \q
 ```
 
+### migrate
+
+```bash
+(pipenv shell) python manage.py migrate
+```
+
+
 ## Deploy
 
 ### zappa init
@@ -97,3 +104,5 @@ zappa update dev
 ```
 
 If your stage is "production", you could run it with command "zappa update production".
+
+If deploy succeeded, you can get the URL. You could put it at "ALLOWED_HOSTS" in your config/dev.py or production.py file.
